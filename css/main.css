@@ -95,6 +95,22 @@ main {
   height: 50px;
   border-radius: 3px;
 }
+.container-bottom-graph-bar-item p {
+  display: none;
+  color: hsl(27deg, 66%, 92%);
+  font-weight: 700;
+  min-width: 135%;
+  height: 20px;
+  background-color: hsl(25deg, 47%, 15%);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
 .container-bottom-graph-day {
   height: 10%;
   display: flex;
@@ -143,6 +159,17 @@ main {
 .container-bottom-total-right-p2 {
   color: hsl(28deg, 10%, 53%);
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container-bottom-graph-bar-item {
+    width: 40px;
+    position: relative;
+  }
+  .container-bottom-graph-bar-item:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
