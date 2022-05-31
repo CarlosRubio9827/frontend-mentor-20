@@ -7,37 +7,73 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/main.css">
+  
 </head>
 <body>
 
-  My balance
-  $921.48
+  <main>
+    <section class="container">
+      <article class="container-top">
+        <p class="container-top-title">My balance</p>
+        <p class="container-top-price">$921.48</>
+        <figure>
+          <img src="./images/logo.svg" alt="Logo">
+        </figure>
+      </article>
+      <article class="container-bottom">
+        <p class="container-bottom-p">Spending - Last 7 days</p>
+        <div class="container-bottom-graph">
+            <div class="container-bottom-graph-bar">
+              <div class="container-bottom-graph-bar-item">
+                
+              </div>
+              <div class="container-bottom-graph-bar-item">
 
-  Spending - Last 7 days
+              </div>
+              <div class="container-bottom-graph-bar-item">
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+              </div>
+              <div class="container-bottom-graph-bar-item">
 
-  Total this month
-  $478.33
+              </div>
+              <div class="container-bottom-graph-bar-item">
 
-  +2.4%
-  from last month
-  
+              </div>
+              <div class="container-bottom-graph-bar-item">
+
+              </div>
+              <div class="container-bottom-graph-bar-item">
+
+              </div>
+            </div>
+            <div class="container-bottom-graph-day">
+              <p>mon</p>
+              <p>tue</p>
+              <p>wed</p>
+              <p>thu</p>
+              <p>fri</p>
+              <p>sat</p>
+              <p>sun</p>
+            </div>
+        </div>
+        <div class="container-bottom-total">
+          <div class="container-bottom-total-left">
+            <p class="container-bottom-total-left-p1">Total this month</p>
+            <p class="container-bottom-total-left-p2">$478.33</p>
+          </div>
+          <div class="container-bottom-total-right">
+            <p class="container-bottom-total-right-p1">+2.4%</p>
+            <p class="container-bottom-total-right-p2">from last month</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a target="_blank" href="https://www.crubio.dev">Carlos Rubio</a>.
   </div>
 </body>
+<script src="./js/main.js"></script>
 </html>

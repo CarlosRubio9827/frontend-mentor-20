@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+// Primary
+$Softred: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+// Neutral
+$Darkbrown: hsl(25, 47%, 15%);
+$Mediumbrown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Verypaleorange: hsl(33, 100%, 98%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: $Cream;
+    padding: 48px 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    // align-items: center;
+    justify-content: space-between;    
+    max-width: 402px;
+    margin: 0 auto;
+    &-top{   
+        width: 100%;
+        height: 75px;
+        background-color: $Softred;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        justify-content: center;
+        align-content: space-between;
+        &-title{
+            color: $Cream;
+            font-size: 1.2rem;
+        }
+        &-price{
+            color: $Verypaleorange;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        & figure{
+            & img{   
+                width: 45px;
+            }
+        }
+    }
+    &-bottom{
+        background-color: $Verypaleorange;
+        width: 100%;
+        height: 80%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 0 20px;
+        justify-content: space-between;
+        &-p{
+            color: $Darkbrown;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        &-graph{
+            // background-color: paleturquoise;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;            
+            justify-content: space-around;
+            &-bar{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding-top: 25px;
+                &-item{
+                    background-color: $Softred;
+                    width: 25px;
+                    height: 50px;
+                    border-radius: 3px;
+                }
+            }
+            &-day{
+                height: 10%;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                // padding: 0 2px;
+                & p{
+                    color: $Mediumbrown;
+                    font-size: 1rem;
+                    width: 25px;
+                    text-align: center;
+                }
+            }
+        }
+        &-total{
+            border-top: 2px solid $Cream;
+            // background-color: papayawhip;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-left{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                // height: 40px;
+                &-p1{
+                    font-size: 1.1rem;
+                    color: $Mediumbrown;
+                }
+                &-p2{
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    color: $Darkbrown;
+                }
+            }
+            &-right{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                height: 40px;
+                justify-content: flex-end;
+                &-p1{
+                    color: $Darkbrown;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+                &-p2{
+                    color: $Mediumbrown;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+}
